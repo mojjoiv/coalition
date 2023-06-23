@@ -70,7 +70,6 @@ p {
 .number {
   margin-left: 40px;
   display: flex;
-  /* flex-direction: column; */
   align-items: flex-start;
   margin-bottom: 10px;
   margin-top: 100px;
@@ -101,7 +100,6 @@ p {
   line-height: 1.4em;
   
   margin-top: -100px;
-  /* margin-bottom: 10px; */
 }
 
 .tagline {
@@ -155,7 +153,6 @@ p {
 
 .topbar-logo {
   position: relative;
-  /* border-radius: 50%; */
   background-color: rgba(255, 255, 255, 0.7);
   padding: 10px;
   margin-right: 10px;
@@ -200,7 +197,6 @@ p {
   overflow: hidden;
   top: 0;
   left: 0;
-  /* width: 180vh; */
   right: 0;
   margin-top: 0;
   margin-right: 30vh;
@@ -281,42 +277,6 @@ p {
   border-bottom-color: #ccc;
 }
 
-/* Footer styles */
-.footer {
-  background-color: #fff;
-  padding: 20px;
-  padding: 3px 100px;
-  display: flex;
-  text-align: center;
-  position: fixed;
-  justify-content: space-between;
-  align-items: center;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-.footer-text {
-  color: #333;
-  font-size: 14px;
-}
-
-.footer-menu li {
-  margin-right: 10px;
-}
-
-.footer-nav {
-  display: flex;
-  justify-content: center;
-}
-
-.footer-link {
-  text-decoration: none;
-  color: #8c71ee;
-  border-bottom: 2px solid #fff;
-}
-
 body.second-page {
   background-image: url("images/peak1.webp");
   background-repeat: no-repeat;
@@ -344,7 +304,7 @@ body.second-page {
 }
 
 #history .link-icon::before {
-  content: "\f0a7"; /* Add your desired icon code here */
+  content: "\f0a7"; 
   font-family: 'Kanit', sans-serif; 
 }
 
@@ -477,7 +437,6 @@ body.second-page {
   margin-top: 300px;
   margin-bottom: 50px;
   top: 0;
-  /* background: rgba(255, 255, 255, 0.432); */
   display: flex;
   flex-direction: column;
   justify-content: center;
