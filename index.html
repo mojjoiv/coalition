@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- <div class="landing"> -->
+  <header class="navbar">
+    <div class="navbar-logo">
+      <img src="./images//mountain-logo.webp" alt="Mountain Logo">
+    </div>
+    <nav class="navbar-menu">
+      <ul>
+        <li><a href="#history">01.History</a></li>
+        <li><a href="#team">02.Team</a></li>
+      </ul>
+    </nav>
+  </header>
+<!-- </div> -->
+<br/>
+  <main>
+    <section id="landing">
+      
+    </section>
+    <div class="history">
+      <div class="topbar">
+        <div class="topbar-logo">
+            <img src="./images//mountains.png" alt="Los Angeles Mountains Logo">
+        </div>
+      
+      <nav class="topbar-menu">
+        <ul>
+          <li><a href="#history">01.History</a></li>
+          <li><a href="#team">02.Team</a></li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+
+    <section id="history">
+      <div class="banner">
+        <div class="number">
+          <h1>
+            01. <span>History</span>
+          </h1>
+          <div class="slidediv">
+            <p class="content">
+              Contrary to popular belief, Lorem Ipsum is not simply random text. 
+            It has roots in a piece of classical Latin literature from 45 BC, 
+            making it over 2000 years old. Richard McClintock, a Latin professor
+             at Hampden-Sydney College in Virginia, looked up one of the more 
+             obscure Latin words, consectetur, from a Lorem Ipsum passage, and 
+             going through the cites of the word in classical literature, discovered 
+             the undoubtable source
+            </p>
+          </div>
+        </div>
+       
+      </div>
+      
+        <div class="slideshow-container">
+
+            
+            <div class="Containers">
+              
+              <img src="images/clifftop.jpeg" >
+              
+            </div>
+          
+            <div class="Containers">
+              
+              <img src="images/glacier.webp">
+              
+            </div>
+          
+            <div class="Containers">
+              
+              <img src="images/clifftop.jpeg">
+           
+            </div>
+
+            <div class="Containers">
+                
+                <img src="images/glacier.webp">
+                
+            </div>
+          
+            <!-- <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="forward" onclick="plusSlides(1)">&#10095;</a> -->
+            <div>
+              <span class="dots" onclick="currentSlide(1)"></span>
+              <span class="dots" onclick="currentSlide(2)"></span>
+              <span class="dots" onclick="currentSlide(3)"></span>
+              <span class="dots" onclick="currentSlide(4)"></span>
+            </div> 
+        </div>
+          
+        
+    </section>
+
+    
+<div class="tam-tp">
+  <div class="tam-cnt">
+    <h1>
+      02. <span>Climb</span>
+    </h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       Fugit, saepe? Vel deleniti deserunt unde veniam.
+       Fugit, saepe? Vel deleniti deserunt unde veniam.
+    </p>
+  </div>
+</div>
+<div class="history">
+  <div class="minibar">
+  
+  <nav class="minibar-menu">
+    <ul>
+      <li><a href="#history">Mountain 1</a></li>
+      <li><a href="#team">Mountain 2</a></li>
+    </ul>
+  </nav>
+</div>
+</div>
+    <section id="team">
+        <div class="history">
+            <div class="logo">
+
+              </div>
+        </div>
+
+        <div class="txt">
+          <h2>
+            Schedule
+          </h2>
+          <p>
+            24th Nov  2016<span>Vestibulum viverra</span>
+          </p>
+          <p>
+            24th Nov  2016<span>Vestibulum viverra</span>
+          </p>
+          <p>
+            24th Nov  2016<span>Vestibulum viverra</span>
+          </p>
+          <p>
+            24th Nov  2016<span>Vestibulum viverra</span>
+          </p>
+        </div>
+    </section>
+
+    <footer class="foot">
+        <a class="logo" href="">
+          <img src="./images/footer.png" alt="Company Logo">
+        </a>
+      <p>
+        Copyight 2016. All rights reserved.
+      </p>
+    </footer>
+  </main>
+  <script>
+    function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" })
+      }
+    }
+
+    var slidePosition = 1;
+SlideShow(slidePosition);
+
+// forward/Back controls
+function plusSlides(n) {
+  SlideShow(slidePosition += n);
+}
+
+//  images controls
+function currentSlide(n) {
+  SlideShow(slidePosition = n);
+}
+
+function SlideShow(n) {
+  var i;
+  var slides = document.getElementsByClassName("Containers");
+  var circles = document.getElementsByClassName("dots");
+  if (n > slides.length) {slidePosition = 1}
+  if (n < 1) {slidePosition = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < circles.length; i++) {
+      circles[i].className = circles[i].className.replace(" enable", "");
+  }
+  slides[slidePosition-1].style.display = "block";
+  circles[slidePosition-1].className += " enable";
+} 
+  </script>
+</body>
+</html>
